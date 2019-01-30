@@ -4,7 +4,7 @@
 		<div class="col-md-12">
 			<img src="/assets/images/happyburger.jpg" alt="burger" class="img-responsive center-block">
 		</div>
-	</div><!-- end first row -->
+	</div>
 
 
 
@@ -12,7 +12,7 @@
 		<div class="col-md-12">
 			<h1 class="text-center text-danger">Eat-Da-Burger</h1>
 		</div>
-	</div><!-- end second row -->
+	</div>
 
 
 
@@ -40,7 +40,7 @@
 
 
 		<div class="col-md-5">
-			<h3 class="text-muted">Devoured Burgers</h3>
+			<h3>Devoured Burgers</h3>
 			<ul>
 				{{#each burgers}}
 					{{#if this.devoured}}
@@ -61,13 +61,12 @@
 			<form class="create-update-form" action="burgers/insertOne" method="POST">
 				<div class="form-group">
 					<!-- <label for="bg">Burger Name:</label> -->
-					<textarea type="text" name="name"></textarea><br>
-					<button class="btn btn-default" type="submit">Submit</button>
-					<h5 class="text-center">Enter a burger you want to eat then click Submit button.</h5>
+					<input class="form-control" id="inputdefault" type="text">
+					<button class="btn" type="submit">Submit</button>
+					<h4 class="text-center">Enter a burger you want to eat then click Submit button.</h4>
 				</div>
 			</form>
 		</div>
-	</div><!-- end fourth row -->
+	</div>
 
-<!-- end bootstrap container -->
 </div>
