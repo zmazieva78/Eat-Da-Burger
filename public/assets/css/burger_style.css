@@ -1,17 +1,20 @@
 body {
-	background-image: url("/assets/images/fries.png");
+	background-image: url("/assets/images/background.jpg");
 	margin-top: 20px;
 }
 
 img {
-	width: 200px;
+	width: 350px;
 	height: auto;
 }
 h3 {
-    color: black;
-    font-size: 30px;
+    color: aliceblue;
+    font-size: 22px;
 }
 h1 {
-    font-size: 60px;
-    color: red;
+    font-size: 40px;
+    color: rgb(233,17,17);
+}
+h4, h5 {
+    color: aliceblue;
 }

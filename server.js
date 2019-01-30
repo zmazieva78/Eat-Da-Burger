@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 8080;
 
 // Express app.
 var app = express();
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 // Bodyparsers 
 app.use(bodyParser.urlencoded({ extended: true }));

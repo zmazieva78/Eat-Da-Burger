@@ -1,9 +1,15 @@
-CREATE DATABASE burger_db;
-USE burger_db;
+#DROP DATABASE IF EXISTS burgers_db;
 
-CREATE TABLE burgers (
-  id Int(11) AUTO_INCREMENT NOT NULL,
-  burger_name VARCHAR(255) NOT NULL,
-  devoured BOOLEAN,
-  PRIMARY KEY (id) 
+-- Create database 
+CREATE DATABASE burgers_db;
+USE burgers_db;
+
+-- Create table
+CREATE TABLE IF NOT EXISTS  burgers
+(
+	id int(10) NOT NULL AUTO_INCREMENT,
+	burger_name VARCHAR(255) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	dt  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (id)
 );
