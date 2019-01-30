@@ -8,6 +8,7 @@ Eat-Da-Burger! is a restaurant app that lets users input name of a burger of the
 
 - Clone down the repo to your computer
 - In terminal run ``` npm install ``` to download the Node dependencies
+- Open MySQL and create database ``` burgers_db ```, copy and paste ``` schema.sql ``` and ``` seeds.sql ``` save it
 - At command prompt run node ``` server.js ```
 - Serve the application in ``` localhost:8080 ``` in your browser
 
