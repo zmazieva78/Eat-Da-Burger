@@ -24,6 +24,5 @@ Eat-Da-Burger! is a restaurant app that lets users input name of a burger of the
 
 https://github.com/zmazieva78/Eat-Da-Burger.git
 
-Heroku is coming....
-
+https://calm-harbor-34269.herokuapp.com/index
 
