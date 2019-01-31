@@ -7,7 +7,11 @@ var burger = require('../models/burger.js');
 
 // Index redirect
 router.get('/', function(req, res) {
-	res.redirect('/index');
+	//res.redirect('/index');
+	burger.selectAll(function(data) {
+		var hbsObject = {burgers: data};
+		res.render('index', hbsObject);
+	});
 });
 
 
