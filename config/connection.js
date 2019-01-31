@@ -15,11 +15,10 @@ if (process.env.JAWSDB_URL) {
 	});
 };
 
-
 // Connect database
 connection.connect(function(err) {
 	if (err) {
-		console.error('There was an error conencting: ' + err.stack + '\n');
+		console.error('There was an error connecting: ' + err.stack + '\n');
 		return;
 	}
 	console.log('You are connected as id ' + connection.threadId + '\n');
