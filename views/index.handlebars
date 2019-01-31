@@ -23,7 +23,7 @@
 				{{#each burgers}}
 					{{#unless this.devoured}}
 						<li>
-							<h5>{{this.id}}. {{this.burger_name}}
+							<h5>{{this.burger_name}}
 								<form action='burgers/updateOne/{{this.id}}?_method=PUT' method='POST'>
 									<input type='hidden' name='devoured' value='true'>
 									<button type='submit' class="btn btn-default">Devour it</button>
@@ -45,7 +45,7 @@
 				{{#each burgers}}
 					{{#if this.devoured}}
 						<li>
-							<h5 class="text-muted">{{this.id}}. {{this.burger_name}}</h5>
+							<h5 class="text-muted">{{this.burger_name}}</h5>
 						</li>
 					{{/if}}
 				{{/each}}
